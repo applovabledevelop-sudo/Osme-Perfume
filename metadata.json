@@ -1,0 +1,6 @@
+{
+  "name": "Luxora Perfumes",
+  "description": "Luxury perfume ecommerce experience featuring handcrafted fragrances, rich scent notes, seamless shopping, and an exclusive editorial boutique.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

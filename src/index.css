@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --luxora-cream: #FAF7F2;
+    --luxora-ivory: #F4EFE6;
+    --luxora-gold: #C5A059;
+    --luxora-gold-light: #E2C98D;
+    --luxora-gold-dark: #A37F38;
+    --luxora-black: #141312;
+    --luxora-charcoal: #252320;
+    --luxora-muted: #7A756D;
+    --luxora-border: #E8E2D7;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--luxora-cream);
+    color: var(--luxora-black);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CFBE;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Luxury Card Glow */
+.gold-glow {
+  box-shadow: 0 4px 30px rgba(197, 160, 89, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 10px 35px rgba(197, 160, 89, 0.22);
+}
+
+/* Smooth Image Transitions */
+.luxury-image-zoom {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.group:hover .luxury-image-zoom {
+  transform: scale(1.05);
+}
